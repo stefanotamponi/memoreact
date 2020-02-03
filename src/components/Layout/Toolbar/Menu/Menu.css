@@ -1,0 +1,24 @@
+.Menu {
+  color: #000;
+
+  &__title {
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-indent: none;
+  }
+
+  li {
+    background: #FFF;
+    font-size: 1.1em;
+    margin.bottom: 10px;
+    padding: 10px 0px;
+    text-align: center;
+  }
+
+}

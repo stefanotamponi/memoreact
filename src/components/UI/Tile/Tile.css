@@ -1,0 +1,11 @@
+.Tile {
+  align-items: center;
+  display: flex;
+  &__text {
+    padding-left: 15px;
+  }
+
+  &--clickable {
+    cursor: pointer;
+  }
+}

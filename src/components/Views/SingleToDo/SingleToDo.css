@@ -1,0 +1,12 @@
+.SingleTodo {
+  &__time > div{
+    align-items: center;
+    border-bottom: 1px solid #c4c4c4;
+    display: flex;
+    justify-content: center;
+    p {
+      margin-left: 15px;
+    }
+  }
+  
+}

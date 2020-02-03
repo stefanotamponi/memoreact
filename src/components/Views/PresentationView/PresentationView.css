@@ -1,0 +1,11 @@
+.PresentationView {
+	.additional-info {
+		overflow: hidden;
+		padding: 10px 0;
+	}
+}
+@media screen and (min-width: 600px) {
+	.PresentationView {
+		text-align: center;
+	}
+}

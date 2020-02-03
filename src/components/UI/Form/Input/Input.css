@@ -1,0 +1,84 @@
+.Input {
+  &--checkbox {
+    align-items: center;
+    display: flex;
+    label {
+      margin-left: 15px;
+    }
+
+    input[type="checkbox"] {
+      height: 20px;
+      margin: 0;
+      position: relative;
+      visibility: hidden;
+      width: 20px;
+  
+      &::before {
+        border: 1px solid #000;
+        border-radius: 2px;
+        content: "";
+        display: block;
+        height: 20px;
+        left: 0;
+        position: absolute;
+        top: -1px;
+        visibility: visible;
+        width: 20px;
+      }
+
+      &::after {
+        border: 3px solid #000;
+        border-top: none;
+        border-right: none;
+        content: "";
+        display: block;
+        height: 5px;
+        left: 50%;
+        opacity: 0;
+        position: absolute;
+        top: 20%;
+        transform: translate(-40%, 0) rotate(-45deg);
+        transition: all 300ms ease-out;
+        visibility: visible;
+        width: 12px;
+      }
+
+      &:checked::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &--text, &--textarea {
+    label {
+      display: block;
+      font-family: inherit;
+      margin-bottom: 0px;
+      margin-top: 10px;
+    }
+
+    input, textarea {
+      border: 1px solid #000;
+      border-radius: 2px;
+      box-shadow: none;
+      font-family: inherit;
+      padding: 5px 10px;
+      transition: all 300ms ease-out;
+      width: 100%;
+      
+      &:focus {
+        outline: none;
+      }
+    }
+
+    input {
+      margin: 10px 0;
+    }
+
+    &.Input--disabled {
+      input {
+        border: 1px solid red;
+      }
+    }
+  } 
+}

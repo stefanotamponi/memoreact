@@ -1,0 +1,43 @@
+.Banner {
+  background-color: #FFF;
+  bottom: 0;
+  box-shadow: 0 -3px 6px  rgba(0, 0, 0, .19);
+  left: 0;
+  padding: 10px 0;
+  position: fixed;
+  text-align: left;
+  transition: all 300ms ease-out;
+  width: 100%;
+  z-index: 999;
+
+  &--cookie {
+    background-color: #111;
+    color: #FFF;
+  }
+
+  &--danger {
+    background-color: #d84444;
+    color: #FFF;
+  }
+
+  &--success {
+    background-color: #13f055;
+    color: #FFF;
+  }
+
+  &--enter {
+    transform: translateY(100%);
+    &-active {
+      transform: translateY(0);
+    }
+  }
+  &--exit {
+    transform: translateY(0);
+    z-index: 999;
+
+    &-active {
+      transform: translateY(100%);
+      z-index: 999;
+    }
+  }
+}

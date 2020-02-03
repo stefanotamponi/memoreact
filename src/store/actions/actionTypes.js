@@ -1,0 +1,33 @@
+export const CREATE_CATEGORY = 'CREATE_CATEGORY';
+export const EDIT_CATEGORY = 'EDIT_CATEGORY';
+export const DELETE_CATEGORY = 'DELETE_CATEGORY';
+export const CREATE_TODO = 'CREATE_TODO';
+export const UPDATE_TODO_STATUS = 'UPDATE_TODO_STATUS';
+export const UPDATE_TODO_CONTENT = 'UPDATE_TODO_CONTENT';
+export const DELETE_TODO = 'DELETE_TODO';
+export const FETCH_DATA = 'FETCH_DATA';
+export const MERGE_DATA = 'MERGE_DATA';
+export const PUSH_DATA = 'PUSH_DATA';
+export const CLEAR_DATA = 'CLEAR_DATA';
+
+export const AUTH = 'AUTH';
+export const AUTH_CHECK_STATE = 'AUTH_CHECK_STATE';
+export const AUTH_FAIL = 'AUTH_FAIL';
+export const AUTH_SUCCESS = 'AUTH_SUCCESS';
+export const DELETE_USER = 'DELETE_USER';
+export const DELETE_USER_SUCCESS = 'DELETE_USER_SUCCESS';
+export const DELETE_USER_FAIL = 'DELETE_USER_FAIL';
+export const LOGOUT = 'LOGOUT';
+export const RESET_PASSWORD = 'RESET_PASSWORD';
+export const RESET_PASSWORD_OK = 'RESET_PASSWORD_OK';
+export const RESET_PASSWORD_KO = 'RESET_PASSWORD_KO';
+export const CLEAR_INFO = 'CLEAR_INFO';
+
+export const CHECK_COOKIES = 'CHECK_COOKIES';
+export const ACCEPT_COOKIES = 'ACCEPT_COOKIES';
+export const DENY_COOKIES = 'DENY_COOKIES';
+
+export const START_LOADING = 'START_LOADING';
+export const FINISH_LOADING = 'FINISH_LOADING';
+export const OPEN_MODAL = 'OPEN_MODAL';
+export const CLOSE_MODAL = 'CLOSE_MODAL';

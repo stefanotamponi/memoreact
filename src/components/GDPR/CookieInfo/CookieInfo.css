@@ -1,0 +1,10 @@
+@media screen and (min-width: 900px) {
+  .CookieInfo {
+    align-items: flex-end;
+    display: flex;
+    padding-bottom: 20px;
+    &__txt {
+      padding-right: 50px;
+    }
+  }
+}

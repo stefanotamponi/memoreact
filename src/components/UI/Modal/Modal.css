@@ -1,0 +1,69 @@
+.Modal {
+  height: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  transition: all 600ms ease-out; 
+  top: 0;
+  width: 100%;
+  z-index: 99;
+
+  &__backdrop {
+    background-color: rgba(0, 0, 0, .35);
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+  }
+
+  &__inner {
+    border-radius: 5px;
+    background-color: #FFF;
+    left: 50%;
+    max-width: 500px;
+    overflow-y: scroll;
+    padding: 10px 20px;
+    position: absolute;
+    top: 50%;
+    transition: all 300ms ease-out 300ms;
+    transform: translate(-50%, -50%);
+    width: 85%;
+  }
+
+  /*Transitions*/
+  &--enter {
+    opacity: 0;
+    pointer-events: none;
+    .Modal__inner {
+      clip-path: circle(0% at 50% 50%); 
+    }
+
+    &-active {
+      opacity: 1;
+      pointer-events: all;
+      .Modal__inner {
+        clip-path: circle(100% at 50% 50%); 
+      }
+    }
+  }
+
+  &--exit {
+    opacity: 1;
+    pointer-events: none;
+    &-active {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+ 
+}
+
+/*
+  There is this exception in order to mantain visible the full privacy policy while keeping the modal format, and keep nested modal from suffer this one.
+*/
+
+.PrivacyPolicy {
+  .Modal__inner {
+    max-height: 80%;
+  }
+}

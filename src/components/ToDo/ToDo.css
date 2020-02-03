@@ -1,0 +1,14 @@
+.ToDo {
+  align-items: center;
+  display: flex;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__title {
+    cursor: pointer;
+    padding-left: 15px;
+  }
+}

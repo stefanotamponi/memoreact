@@ -1,0 +1,32 @@
+.CategoryView {
+  section:first-child {
+    border-bottom: none;
+  }
+
+  hr {
+    border: none;
+    background-color: #c4c4c4;
+    height: 1px;
+    outline: none;
+  }
+
+  &__title {
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &__completed {
+    .ToDo {
+      position: relative;
+      &::after {
+        background-color: #000;
+        content: "";
+        height: 2px;
+        position: absolute;
+        pointer-events: none;
+        width: 100%;
+
+      }
+    }
+  }
+}

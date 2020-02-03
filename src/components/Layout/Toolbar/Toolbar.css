@@ -1,0 +1,68 @@
+header {
+  align-items: center;
+  background-color: #1A8FE3;
+  color: #FFF;
+  display: flex;
+  height: 95px;
+  padding: 15px 0;
+
+  .Icon {
+    cursor: pointer;
+  }
+
+  .&__inner {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .&__menu {
+    .Icon {
+      margin: 0 15px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .&__user-data {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 50%;
+    width: 100%;
+  }
+
+  h3,small { /* Separate them from the profile picture*/ 
+    padding: 0 15px;
+  }
+
+  h3 { /*Username*/
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .&__page-title { /* When not in home page */
+    font-size: 2em;
+  }
+
+  small { /*Email, details*/
+    font-size: .75em;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+
+  .&--email-name {
+    h3 {
+      font-size: 1.1em;
+    }
+    small {
+      display: none;
+    }
+  }
+}

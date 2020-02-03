@@ -1,0 +1,48 @@
+.Spinner {
+  animation: spinner 1100ms infinite linear;
+  border: 5px solid #c4c4c4;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-radius: 50%;
+  display: block;
+  height: 30px;
+  left: 50%;
+  position: fixed;
+  top: 85%;
+  transition: 500ms ease-out;
+  width: 30px;
+
+  &::after {
+    animation: spinner 1250ms infinite ease-in-out;
+    border: 3px solid #000;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    content: "";
+    height: 30px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+  }
+
+  &--enter {
+    opacity: 0;
+    &-active {
+      opacity: .5;
+    }
+  }
+
+  &--exit {
+    opacity: .5;
+    &-active {
+      opacity: 0;
+    }
+  }
+}
+
+
+@keyframes spinner {
+  0% { transform: translate(-50%, -50%) rotate(0deg) }
+  100% { transform: translate(-50%, -50%) rotate(360deg) } 
+}
