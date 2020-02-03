@@ -7,7 +7,7 @@ const hero = () => (
   <section className="Hero">
     <Wrapper>
       <h1>Take your thoughts to the cloud.</h1>
-      <small>View the source code on <a href="https://www.google.com/">GitHub</a></small>
+      <small>View the source code on <a href="https://github.com/stefanotamponi/memoreact">GitHub</a></small>
     </Wrapper>
   </section>
 );

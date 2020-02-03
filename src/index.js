@@ -24,7 +24,7 @@ const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)))
 
 const app = (
   <Provider store={store}>
-    <BrowserRouter basename="/memoreact">
+    <BrowserRouter basename="/memoreact/">
       <App />
     </BrowserRouter>
   </Provider>
