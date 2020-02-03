@@ -10,7 +10,7 @@
     "build": "rimraf dist && webpack --config webpack.prod.config.js --color --profile --progress",
     "stream": "webpack-dev-server --progress --color --config webpack.config.browserSync.config.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "react",
