@@ -13,6 +13,9 @@
   &--cookie {
     background-color: #111;
     color: #FFF;
+    .Modal {
+      color: #222
+    }
   }
 
   &--danger {
